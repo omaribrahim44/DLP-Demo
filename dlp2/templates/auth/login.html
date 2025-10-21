@@ -1,0 +1,336 @@
+{% extends "base.html" %}
+{% block title %}Secure Login - DLP System{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-lg-5">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                            <h2 class="fw-bold mb-2">DLP System</h2>
+                            <p class="mb-0">Enterprise Data Loss Prevention</p>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-body">
+                        <div class="text-center mb-4">
+                            <h4 class="fw-bold text-dark">Welcome Back</h4>
+                            <p class="text-muted">Sign in to your secure account</p>
+                        </div>
+                        
+                        <form method="POST" id="loginForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope me-2"></i>Email Address
+                                </label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" 
+                                       placeholder="Enter your email" required autocomplete="email">
+                                <div class="form-text">
+                                    <i class="fas fa-lock me-1"></i>Your email is encrypted and secure
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    <i class="fas fa-key me-2"></i>Password
+                                </label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control form-control-lg" id="password" 
+                                           name="password" placeholder="Enter your password" required autocomplete="current-password">
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                        <i class="fas fa-eye" id="toggleIcon"></i>
+                                    </button>
+                                </div>
+                                <div class="form-text">
+                                    <i class="fas fa-shield-alt me-1"></i>Password is transmitted securely
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                                <label class="form-check-label" for="remember">
+                                    <i class="fas fa-user-clock me-1"></i>Remember me for 30 days
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100 mb-3" id="loginBtn">
+                                <i class="fas fa-sign-in-alt me-2"></i>Sign In Securely
+                            </button>
+                        </form>
+                        
+                        <div class="text-center">
+                            <p class="mb-0">
+                                Don't have an account? 
+                                <a href="{{ url_for('auth.register') }}" class="text-decoration-none fw-bold">Register here</a>
+                            </p>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <!-- Security Features -->
+                        <div class="security-features">
+                            <h6 class="text-center text-muted mb-3">
+                                <i class="fas fa-shield-alt me-2"></i>Security Features
+                            </h6>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <i class="fas fa-lock text-success mb-2"></i>
+                                    <div class="small text-muted">SSL Encrypted</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="fas fa-user-shield text-info mb-2"></i>
+                                    <div class="small text-muted">2FA Ready</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="fas fa-eye-slash text-warning mb-2"></i>
+                                    <div class="small text-muted">Privacy First</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <!-- Demo Accounts -->
+                        <div class="demo-accounts">
+                            <h6 class="text-center text-muted mb-3">
+                                <i class="fas fa-users me-2"></i>Demo Accounts
+                            </h6>
+                            <div class="demo-account-item" onclick="fillDemoAccount('admin@dlp-system.com', 'admin123')">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Administrator</strong>
+                                        <div class="small text-muted">Full system access</div>
+                                    </div>
+                                    <span class="badge bg-danger">Admin</span>
+                                </div>
+                            </div>
+                            
+                            <div class="demo-account-item" onclick="fillDemoAccount('alice@example.com', 'demo123')">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Alice Johnson</strong>
+                                        <div class="small text-muted">Regular user</div>
+                                    </div>
+                                    <span class="badge bg-primary">User</span>
+                                </div>
+                            </div>
+                            
+                            <div class="demo-account-item" onclick="fillDemoAccount('charlie@external.com', 'demo123')">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Charlie Brown</strong>
+                                        <div class="small text-muted">External user</div>
+                                    </div>
+                                    <span class="badge bg-warning">External</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security Notice -->
+                <div class="text-center mt-4">
+                    <small class="text-muted">
+                        <i class="fas fa-info-circle me-1"></i>
+                        This system is protected by enterprise-grade security measures
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.auth-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.auth-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.auth-body {
+    padding: 40px 30px;
+}
+
+.form-control-lg {
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.security-features {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.demo-accounts {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.demo-account-item {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.demo-account-item:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.demo-account-item:last-child {
+    margin-bottom: 0;
+}
+
+.form-check-input:checked {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.input-group .btn {
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #e9ecef;
+    border-left: none;
+}
+
+.input-group .form-control {
+    border-radius: 12px 0 0 12px;
+}
+
+/* Loading animation */
+.btn.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn.loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-body {
+        padding: 30px 20px;
+    }
+    
+    .auth-header {
+        padding: 30px 20px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    const loginBtn = document.getElementById('loginBtn');
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    const toggleIcon = document.getElementById('toggleIcon');
+    
+    // Password visibility toggle
+    togglePassword.addEventListener('click', function() {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleIcon.classList.remove('fa-eye');
+            toggleIcon.classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            toggleIcon.classList.remove('fa-eye-slash');
+            toggleIcon.classList.add('fa-eye');
+        }
+    });
+    
+    // Form submission with loading state
+    loginForm.addEventListener('submit', function() {
+        loginBtn.classList.add('loading');
+        loginBtn.disabled = true;
+    });
+    
+    // Auto-focus on email field
+    document.getElementById('email').focus();
+});
+
+function fillDemoAccount(email, password) {
+    document.getElementById('email').value = email;
+    document.getElementById('password').value = password;
+    
+    // Add visual feedback
+    const accountItems = document.querySelectorAll('.demo-account-item');
+    accountItems.forEach(item => {
+        item.style.borderColor = 'transparent';
+    });
+    event.currentTarget.style.borderColor = '#667eea';
+    
+    // Focus on login button
+    document.getElementById('loginBtn').focus();
+}
+
+// Security check - warn if not HTTPS
+if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+    console.warn('Security Warning: This site should be accessed over HTTPS in production');
+}
+</script>
+{% endblock %}

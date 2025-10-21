@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}Security Incidents - DLP System{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h3 mb-0">Security Incidents</h1>
+            <p class="text-muted">View blocked emails and security violations</p>
+        </div>
+    </div>
+
+    <!-- Blocked Emails -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Blocked Emails</h6>
+        </div>
+        <div class="card-body">
+            {% if blocked_emails.items %}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Subject</th>
+                                <th>Block Reason</th>
+                                <th>Violations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for email in blocked_emails.items %}
+                            <tr>
+                                <td>{{ email.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                                <td>{{ email.sender.name }}</td>
+                                <td>{{ email.recipient.name }}</td>
+                                <td>{{ email.subject[:30] }}{% if email.subject|length > 30 %}...{% endif %}</td>
+                                <td>{{ email.block_reason }}</td>
+                                <td>
+                                    {% if email.policy_violations %}
+                                        {% for violation in email.policy_violations %}
+                                            <span class="badge bg-warning me-1">{{ violation.category }}</span>
+                                        {% endfor %}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination -->
+                {% if blocked_emails.pages > 1 %}
+                <nav aria-label="Incidents pagination">
+                    <ul class="pagination justify-content-center">
+                        {% if blocked_emails.has_prev %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ url_for('incidents', page=blocked_emails.prev_num) }}">Previous</a>
+                            </li>
+                        {% endif %}
+                        
+                        {% for page_num in blocked_emails.iter_pages() %}
+                            {% if page_num %}
+                                {% if page_num != blocked_emails.page %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{ url_for('incidents', page=page_num) }}">{{ page_num }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item active">
+                                        <span class="page-link">{{ page_num }}</span>
+                                    </li>
+                                {% endif %}
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <span class="page-link">...</span>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if blocked_emails.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ url_for('incidents', page=blocked_emails.next_num) }}">Next</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+                {% endif %}
+            {% else %}
+                <p class="text-muted text-center py-4">No blocked emails found.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Security Incidents -->
+    {% if security_incidents %}
+    <div class="card shadow">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Security Incidents</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Severity</th>
+                            <th>Description</th>
+                            <th>User</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for incident in security_incidents %}
+                        <tr>
+                            <td>{{ incident.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                            <td>{{ incident.incident_type }}</td>
+                            <td>
+                                {% if incident.severity == 'critical' %}
+                                    <span class="badge bg-danger">Critical</span>
+                                {% elif incident.severity == 'high' %}
+                                    <span class="badge bg-warning">High</span>
+                                {% elif incident.severity == 'medium' %}
+                                    <span class="badge bg-primary">Medium</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">Low</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ incident.description }}</td>
+                            <td>{{ incident.user.name if incident.user else 'System' }}</td>
+                            <td>
+                                {% if incident.status == 'open' %}
+                                    <span class="badge bg-warning">Open</span>
+                                {% elif incident.status == 'investigating' %}
+                                    <span class="badge bg-info">Investigating</span>
+                                {% elif incident.status == 'resolved' %}
+                                    <span class="badge bg-success">Resolved</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">Closed</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
