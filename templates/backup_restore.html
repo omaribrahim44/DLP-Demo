@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% block title %}Backup & Restore - DLP System{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h3 mb-0">Backup & Restore</h1>
+            <p class="text-muted">System backup and data recovery management</p>
+        </div>
+    </div>
+
+    <!-- Backup Section -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-download me-2"></i>Create Backup
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <label for="backup_type" class="form-label">Backup Type</label>
+                            <select class="form-select" id="backup_type" name="backup_type">
+                                <option value="manual">Manual Backup</option>
+                                <option value="full">Full System Backup</option>
+                                <option value="incremental">Incremental Backup</option>
+                            </select>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>What's included:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Database (all user data, logs, policies)</li>
+                                <li>System logs and audit trails</li>
+                                <li>Configuration files</li>
+                            </ul>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-1"></i>Create Backup
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Information -->
+        <div class="col-lg-6">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>System Information
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="h4 text-primary">{{ total_users }}</div>
+                                <small class="text-muted">Total Users</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="h4 text-success">{{ total_emails }}</div>
+                                <small class="text-muted">Email Records</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h6>Database Size</h6>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                    </div>
+                    <small class="text-muted">Estimated: ~2.5 MB</small>
+                    
+                    <hr>
+                    
+                    <h6>Last Backup</h6>
+                    {% if backups %}
+                        <p class="text-success">
+                            <i class="fas fa-check-circle me-1"></i>
+                            {{ backups[0].created_at.strftime('%Y-%m-%d %H:%M') }}
+                        </p>
+                    {% else %}
+                        <p class="text-warning">
+                            <i class="fas fa-exclamation-triangle me-1"></i>
+                            No backups found
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backup History -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-history me-2"></i>Backup History
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if backups %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Size</th>
+                                        <th>Created By</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for backup in backups %}
+                                    <tr>
+                                        <td>{{ backup.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                                        <td>
+                                            <span class="badge bg-info">{{ backup.backup_type|title }}</span>
+                                        </td>
+                                        <td>
+                                            {% if backup.status == 'completed' %}
+                                                <span class="badge bg-success">Completed</span>
+                                            {% elif backup.status == 'failed' %}
+                                                <span class="badge bg-danger">Failed</span>
+                                            {% else %}
+                                                <span class="badge bg-warning">Pending</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            {% if backup.file_size %}
+                                                {{ "%.2f"|format(backup.file_size / 1024) }} KB
+                                            {% else %}
+                                                N/A
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ backup.creator.name if backup.creator else 'System' }}</td>
+                                        <td>
+                                            {% if backup.status == 'completed' %}
+                                                <button class="btn btn-sm btn-outline-primary" onclick="downloadBackup('{{ backup.id }}')">
+                                                    <i class="fas fa-download"></i> Download
+                                                </button>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-archive fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">No Backups Found</h5>
+                            <p class="text-muted">Create your first backup to get started.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restore Section -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-upload me-2"></i>Restore from Backup
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Warning:</strong> Restoring from a backup will overwrite all current data. 
+                        Make sure to create a backup before proceeding.
+                    </div>
+                    
+                    <form method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="action" value="restore">
+                        <div class="mb-3">
+                            <label for="backup_file" class="form-label">Select Backup File</label>
+                            <input type="file" class="form-control" id="backup_file" name="backup_file" accept=".db,.sqlite,.sqlite3">
+                            <div class="form-text">Select a database backup file to restore from.</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="confirm_restore" required>
+                                <label class="form-check-label" for="confirm_restore">
+                                    I understand that this will overwrite all current data
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-warning" onclick="return confirm('Are you sure you want to restore from backup? This action cannot be undone.')">
+                            <i class="fas fa-upload me-1"></i>Restore from Backup
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function downloadBackup(backupId) {
+    // Implement backup download functionality
+    alert('Backup download functionality will be implemented');
+}
+</script>
+{% endblock %}

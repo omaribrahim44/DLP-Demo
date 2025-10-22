@@ -1,0 +1,7 @@
+Blocked message from alice@example.com to charlie@external.com: My credit card is 4111-1111-1111-1111
+SSN|alice@example.com|charlie@external.com|My SSN is 123-45-6789
+Email|alice@example.com|charlie@external.com|Send report to john.doe@example.com
+Phone Number|alice@example.com|charlie@external.com|Bank account: 987654321
+Phone Number|alice@example.com|charlie@external.com|Bank account: 987654321
+Credit Card|alice@example.com|charlie@external.com|My credit card is 4111-1111-1111-1111
+Credit Card|alice@example.com|charlie@external.com|My credit card is 4111-1111-1111-1111

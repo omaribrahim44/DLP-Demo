@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Setup Two-Factor Authentication{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow">
+                <div class="card-header text-center">
+                    <h4 class="mb-0">
+                        <i class="fas fa-mobile-alt me-2"></i>Setup Two-Factor Authentication
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <p class="text-muted">Scan the QR code with your authenticator app to enable 2FA</p>
+                    </div>
+                    
+                    <!-- QR Code -->
+                    <div class="text-center mb-4">
+                        <img src="data:image/png;base64,{{ qr_code }}" alt="2FA QR Code" class="img-fluid" style="max-width: 200px;">
+                    </div>
+                    
+                    <!-- Manual Entry -->
+                    <div class="alert alert-info">
+                        <h6><i class="fas fa-info-circle me-2"></i>Can't scan the QR code?</h6>
+                        <p class="mb-2">Enter this code manually in your authenticator app:</p>
+                        <code class="d-block text-center p-2 bg-light">{{ secret }}</code>
+                    </div>
+                    
+                    <!-- Verification -->
+                    <form method="POST" action="{{ url_for('security_verify_2fa') }}">
+                        <input type="hidden" name="secret" value="{{ secret }}">
+                        <div class="mb-3">
+                            <label for="token" class="form-label">Enter 6-digit code from your app:</label>
+                            <input type="text" class="form-control text-center" id="token" name="token" 
+                                   maxlength="6" pattern="[0-9]{6}" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-check me-1"></i>Verify and Enable 2FA
+                        </button>
+                    </form>
+                    
+                    <hr>
+                    
+                    <!-- Instructions -->
+                    <div class="mt-4">
+                        <h6>How to setup 2FA:</h6>
+                        <ol class="small">
+                            <li>Install an authenticator app on your phone (Google Authenticator, Authy, etc.)</li>
+                            <li>Scan the QR code above or enter the secret key manually</li>
+                            <li>Enter the 6-digit code from your app to verify</li>
+                            <li>Your account will be protected with 2FA</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Auto-focus on token input
+document.getElementById('token').focus();
+
+// Format token input
+document.getElementById('token').addEventListener('input', function() {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    if (this.value.length === 6) {
+        this.form.submit();
+    }
+});
+</script>
+{% endblock %}

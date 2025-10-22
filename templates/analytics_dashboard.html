@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+{% block title %}Analytics Dashboard - DLP System{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h3 mb-0">Advanced Analytics</h1>
+            <p class="text-muted">Comprehensive insights and threat intelligence</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-primary me-2" onclick="refreshAnalytics()">
+                <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+            <button class="btn btn-primary" onclick="exportReport()">
+                <i class="fas fa-download"></i> Export Report
+            </button>
+        </div>
+    </div>
+
+    <!-- Key Metrics Row -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Compliance Rate</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="compliance-rate">{{ compliance_rate }}%</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-shield-alt fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Threat Level</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="threat-level">{{ threat_level|title }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-exclamation-triangle fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Active Policies</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ active_policies }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-cogs fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Open Incidents</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ open_incidents }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-bug fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Violation Trends Chart -->
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Violation Trends (Last 30 Days)</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="violationTrendsChart" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Violators -->
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Top Violators</h6>
+                </div>
+                <div class="card-body">
+                    {% if top_violators %}
+                        {% for violator in top_violators %}
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <div class="font-weight-bold">{{ violator.name }}</div>
+                                <small class="text-muted">{{ violator.email }}</small>
+                            </div>
+                            <span class="badge bg-danger">{{ violator.violations }}</span>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="text-muted text-center py-4">No violations detected.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Policy Effectiveness -->
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Policy Effectiveness</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Policy</th>
+                                    <th>Category</th>
+                                    <th>Violations</th>
+                                    <th>Effectiveness</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for policy in policy_effectiveness %}
+                                <tr>
+                                    <td>{{ policy.policy_name }}</td>
+                                    <td><span class="badge bg-info">{{ policy.category }}</span></td>
+                                    <td>{{ policy.violations }}</td>
+                                    <td>
+                                        {% if policy.effectiveness == 'High' %}
+                                            <span class="badge bg-success">High</span>
+                                        {% elif policy.effectiveness == 'Medium' %}
+                                            <span class="badge bg-warning">Medium</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Low</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Heatmap -->
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Risk Heatmap</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="riskHeatmapChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Threat Intelligence -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Threat Intelligence</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Recent High-Severity Incidents</h6>
+                            {% if recent_incidents %}
+                                {% for incident in recent_incidents %}
+                                <div class="alert alert-{{ 'danger' if incident.severity == 'critical' else 'warning' }} alert-sm">
+                                    <strong>{{ incident.type }}</strong><br>
+                                    <small>{{ incident.description }}</small><br>
+                                    <small class="text-muted">{{ incident.timestamp }}</small>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="text-muted">No recent high-severity incidents.</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Trending Violations</h6>
+                            {% if trending_violations %}
+                                {% for violation, count in trending_violations.items() %}
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>{{ violation }}</span>
+                                    <span class="badge bg-warning">{{ count }}</span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="text-muted">No trending violations detected.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// Violation Trends Chart
+const trendsCtx = document.getElementById('violationTrendsChart');
+new Chart(trendsCtx, {
+    type: 'line',
+    data: {
+        labels: {{ violation_trends|map(attribute='date')|list|tojson }},
+        datasets: [{
+            label: 'Violations',
+            data: {{ violation_trends|map(attribute='count')|list|tojson }},
+            borderColor: '#e74a3b',
+            backgroundColor: 'rgba(231, 74, 59, 0.1)',
+            tension: 0.4,
+            fill: true
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Risk Heatmap Chart
+const heatmapCtx = document.getElementById('riskHeatmapChart');
+new Chart(heatmapCtx, {
+    type: 'doughnut',
+    data: {
+        labels: {{ risk_distribution.keys()|list|tojson }},
+        datasets: [{
+            data: {{ risk_distribution.values()|list|tojson }},
+            backgroundColor: [
+                '#1cc88a', '#f6c23e', '#e74a3b', '#858796'
+            ]
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom'
+            }
+        }
+    }
+});
+
+function refreshAnalytics() {
+    location.reload();
+}
+
+function exportReport() {
+    // Implement export functionality
+    alert('Export functionality will be implemented');
+}
+</script>
+
+<style>
+.border-left-primary {
+    border-left: 0.25rem solid #4e73df !important;
+}
+.border-left-success {
+    border-left: 0.25rem solid #1cc88a !important;
+}
+.border-left-info {
+    border-left: 0.25rem solid #36b9cc !important;
+}
+.border-left-warning {
+    border-left: 0.25rem solid #f6c23e !important;
+}
+.alert-sm {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+</style>
+{% endblock %}

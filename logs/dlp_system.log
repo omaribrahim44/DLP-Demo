@@ -1,0 +1,554 @@
+2025-09-27 03:00:38,316 - root - INFO - Database initialized successfully
+2025-09-27 03:00:38,655 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:00:38,655 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:00:38,678 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:00:39,297 - root - INFO - Database initialized successfully
+2025-09-27 03:00:39,316 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:00:39,322 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:01:31,382 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:31] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-27 03:01:31,411 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:31] "GET /auth/login HTTP/1.1" 200 -
+2025-09-27 03:01:31,699 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:31] "GET /static/style.css HTTP/1.1" 200 -
+2025-09-27 03:01:51,423 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2025-09-27 03:01:51,494 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "GET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-09-27 03:01:51,632 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:01:51,636 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:01:51,707 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=87xPJvnxWVuR66c8Bu8V HTTP/1.1" 200 -
+2025-09-27 03:01:51,840 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:01:51] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-09-27 03:02:08,715 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2025-09-27 03:02:08,772 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:02:08,773 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-09-27 03:02:08,787 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-09-27 03:02:08,834 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=87xPJvnxWVuR66c8Bu8V HTTP/1.1[0m" 304 -
+2025-09-27 03:02:08,988 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:02:08] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-09-27 03:09:40,234 - root - INFO - Database initialized successfully
+2025-09-27 03:09:40,265 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:09:40,265 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:09:40,275 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:09:40,936 - root - INFO - Database initialized successfully
+2025-09-27 03:09:40,956 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:09:40,965 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:09:50,925 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:09:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-27 03:09:51,006 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:09:51] "GET /auth/login HTTP/1.1" 200 -
+2025-09-27 03:09:51,507 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:09:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:10:03,711 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:03] "POST /auth/login HTTP/1.1" 200 -
+2025-09-27 03:10:03,792 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:10:13,424 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:13] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-09-27 03:10:13,466 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:13] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:10:13,519 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:10:26,289 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:26] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:10:26,345 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:10:27,812 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:27] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:10:27,888 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:10:30,212 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:30] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:10:30,260 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:10:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:11:00,847 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:00] "[32mPOST /send HTTP/1.1[0m" 302 -
+2025-09-27 03:11:00,864 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:00] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:11:00,972 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:11:31,059 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:31] "[31m[1mGET /api/stats HTTP/1.1[0m" 403 -
+2025-09-27 03:11:31,305 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:31] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:11:31,375 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:11:32,960 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:32] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:11:33,003 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:11:34,054 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:34] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:11:34,094 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:11:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:12:04,141 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:12:04] "[31m[1mGET /api/stats HTTP/1.1[0m" 403 -
+2025-09-27 03:12:34,275 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:12:34] "[31m[1mGET /api/stats HTTP/1.1[0m" 403 -
+2025-09-27 03:18:06,610 - root - INFO - Database initialized successfully
+2025-09-27 03:18:06,645 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:18:06,646 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:18:06,660 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:18:07,290 - root - INFO - Database initialized successfully
+2025-09-27 03:18:07,310 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:18:07,316 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:18:13,670 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:13] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:18:14,003 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:18:18,226 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:18] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:18:18,265 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:18:19,169 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:19] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:18:19,223 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:18:22,796 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:22] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-09-27 03:18:22,810 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:22] "GET /auth/login HTTP/1.1" 200 -
+2025-09-27 03:18:22,869 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:18:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:19:02,605 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:02] "POST /auth/login HTTP/1.1" 200 -
+2025-09-27 03:19:02,696 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:19:15,150 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:15] "POST /auth/login HTTP/1.1" 200 -
+2025-09-27 03:19:15,228 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:19:25,351 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:25] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-09-27 03:19:25,375 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:25] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:19:25,420 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:19:32,130 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:32] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:19:32,179 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:19:35,504 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:35] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:19:35,557 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:19:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:20:11,378 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:11] "[32mPOST /send HTTP/1.1[0m" 302 -
+2025-09-27 03:20:11,425 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:11] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:20:11,529 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:20:41,929 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:41] "GET /api/stats HTTP/1.1" 200 -
+2025-09-27 03:20:53,939 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:53] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:20:54,021 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:20:59,205 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:59] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:20:59,257 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:20:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:21:53,513 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:21:53] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-09-27 03:21:53,598 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:21:53] "GET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-09-27 03:21:53,599 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:21:53] "GET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:21:53,719 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:21:53] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=GQubpKE4j9WeFzS75pLu HTTP/1.1" 200 -
+2025-09-27 03:21:53,924 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:21:53] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-09-27 03:23:26,994 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:26,995 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:26,995 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:27,330 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:28,201 - root - INFO - Database initialized successfully
+2025-09-27 03:23:28,228 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:28,236 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:33,448 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:33,448 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:33,448 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:34,471 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:35,170 - root - INFO - Database initialized successfully
+2025-09-27 03:23:35,193 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:35,200 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:37,803 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:37,805 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:37,807 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:38,484 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:39,214 - root - INFO - Database initialized successfully
+2025-09-27 03:23:39,240 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:39,253 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:42,429 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:42,430 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:43,505 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:44,202 - root - INFO - Database initialized successfully
+2025-09-27 03:23:44,225 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:44,233 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:46,978 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:46,979 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:46,979 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:47,633 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:49,145 - root - INFO - Database initialized successfully
+2025-09-27 03:23:49,178 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:49,190 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:49,440 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:23:49] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:23:49,652 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:23:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:23:51,995 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:52,000 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:52,039 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:23:52] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:23:52,089 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:23:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:23:52,839 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:53,810 - root - INFO - Database initialized successfully
+2025-09-27 03:23:53,836 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:53,844 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:23:56,221 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:56,223 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:23:57,070 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:23:57,882 - root - INFO - Database initialized successfully
+2025-09-27 03:23:57,902 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:23:57,907 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:24:08,598 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:08] "GET /admin/users HTTP/1.1" 200 -
+2025-09-27 03:24:08,983 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:24:14,561 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:14] "GET /admin/logs HTTP/1.1" 200 -
+2025-09-27 03:24:14,609 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:24:23,450 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:23] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:24:23,507 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:24:30,474 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:30] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:24:30,529 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:24:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:24:33,571 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\gdpr_compliance.py', reloading
+2025-09-27 03:24:34,194 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:24:35,422 - root - INFO - Database initialized successfully
+2025-09-27 03:24:35,452 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:24:35,460 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:25:16,051 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\security_enhancements.py', reloading
+2025-09-27 03:25:16,918 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:25:17,912 - root - INFO - Database initialized successfully
+2025-09-27 03:25:17,935 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:25:17,943 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:26:02,937 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:26:02,945 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:26:02,946 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\app.py', reloading
+2025-09-27 03:26:03,959 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:30:00,478 - root - INFO - Database initialized successfully
+2025-09-27 03:30:00,511 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:30:00,512 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:30:00,524 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:30:01,398 - root - INFO - Database initialized successfully
+2025-09-27 03:30:01,421 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:30:01,428 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:30:16,385 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:16] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:30:16,700 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:30:20,214 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:20] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:30:20,266 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:30:22,557 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:22] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:30:22,604 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:30:25,552 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\jinja2\\environment.py', reloading
+2025-09-27 03:30:25,570 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\jinja2\\loaders.py', reloading
+2025-09-27 03:30:25,603 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "[35m[1mGET /auth/profile HTTP/1.1[0m" 500 -
+2025-09-27 03:30:25,654 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "GET /auth/profile?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-09-27 03:30:25,655 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "GET /auth/profile?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:30:25,674 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "GET /auth/profile?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:30:25,740 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "GET /auth/profile?__debugger__=yes&cmd=resource&f=console.png&s=x1WIjoKEYiN10lZoFWh9 HTTP/1.1" 200 -
+2025-09-27 03:30:25,923 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:30:25] "GET /auth/profile?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-09-27 03:30:26,327 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:30:27,242 - root - INFO - Database initialized successfully
+2025-09-27 03:30:27,270 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:30:27,279 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:35:39,604 - root - INFO - Database initialized successfully
+2025-09-27 03:35:39,635 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:35:39,635 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:35:39,647 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:35:40,356 - root - INFO - Database initialized successfully
+2025-09-27 03:35:40,374 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:35:40,380 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:35:43,106 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:43] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:35:43,384 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:35:44,971 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:44] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-09-27 03:35:45,024 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:45] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:35:45,027 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:45] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-09-27 03:35:45,055 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:45] "GET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-27 03:35:45,210 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:45] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=VA060EZZfwBbTvaGEIzf HTTP/1.1" 200 -
+2025-09-27 03:35:50,864 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:50] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:35:50,923 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:35:53,979 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:53] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:35:54,038 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:35:56,519 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:56] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:35:56,578 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:35:58,527 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:58] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:35:58,617 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:35:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:36:29,291 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:36:29] "GET /api/stats HTTP/1.1" 200 -
+2025-09-27 03:47:32,888 - root - INFO - Database initialized successfully
+2025-09-27 03:47:32,939 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 03:47:32,940 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 03:47:32,958 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:47:33,572 - root - INFO - Database initialized successfully
+2025-09-27 03:47:33,587 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:47:33,597 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:47:39,935 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:39] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:47:40,098 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:47:43,012 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:43] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-09-27 03:47:43,057 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:43] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:47:43,060 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:43] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-09-27 03:47:43,115 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:43] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=Zw2Lc0zjUvmLitcj3Dfx HTTP/1.1" 200 -
+2025-09-27 03:47:44,856 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:44] "GET /incidents HTTP/1.1" 200 -
+2025-09-27 03:47:44,908 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:47:47,980 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:47] "GET /send HTTP/1.1" 200 -
+2025-09-27 03:47:48,025 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:47:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:48:56,058 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:48:56] "[32mPOST /send HTTP/1.1[0m" 302 -
+2025-09-27 03:48:56,071 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:48:56] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 03:48:56,191 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:48:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:49:05,415 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:49:05] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:49:05,473 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:49:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:50:47,824 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\dlp\\dlp_engine.py', reloading
+2025-09-27 03:50:47,825 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\dlp\\dlp_engine.py', reloading
+2025-09-27 03:50:48,659 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:50:49,610 - root - INFO - Database initialized successfully
+2025-09-27 03:50:49,636 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:50:49,644 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:50:52,792 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\dlp\\dlp_engine.py', reloading
+2025-09-27 03:50:52,793 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\dlp\\dlp_engine.py', reloading
+2025-09-27 03:50:52,793 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\dlp\\dlp_engine.py', reloading
+2025-09-27 03:50:53,900 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:50:54,581 - root - INFO - Database initialized successfully
+2025-09-27 03:50:54,596 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:50:54,601 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:52:02,424 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:52:02] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 03:52:02,707 - werkzeug - INFO - 127.0.0.1 - - [27/Sep/2025 03:52:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-27 03:53:16,684 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\config.py', reloading
+2025-09-27 03:53:16,685 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\config.py', reloading
+2025-09-27 03:53:16,686 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\config.py', reloading
+2025-09-27 03:53:17,150 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:53:18,167 - root - INFO - Database initialized successfully
+2025-09-27 03:53:18,187 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:53:18,194 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:53:31,370 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\run.py', reloading
+2025-09-27 03:53:31,371 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\run.py', reloading
+2025-09-27 03:53:31,371 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\run.py', reloading
+2025-09-27 03:53:31,675 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:53:32,438 - root - INFO - Database initialized successfully
+2025-09-27 03:53:32,460 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:53:32,466 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:53:50,334 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\analytics.py', reloading
+2025-09-27 03:53:50,336 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\analytics.py', reloading
+2025-09-27 03:53:50,337 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\analytics.py', reloading
+2025-09-27 03:53:51,593 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:53:52,315 - root - INFO - Database initialized successfully
+2025-09-27 03:53:52,333 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:53:52,339 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:53:53,427 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\file_scanner.py', reloading
+2025-09-27 03:53:53,436 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\file_scanner.py', reloading
+2025-09-27 03:53:53,437 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\file_scanner.py', reloading
+2025-09-27 03:53:53,583 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:53:54,686 - root - INFO - Database initialized successfully
+2025-09-27 03:53:54,711 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:53:54,723 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:53:55,689 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\models.py', reloading
+2025-09-27 03:53:55,690 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\models.py', reloading
+2025-09-27 03:53:55,691 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\models.py', reloading
+2025-09-27 03:53:55,956 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:53:57,000 - root - INFO - Database initialized successfully
+2025-09-27 03:53:57,020 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:53:57,030 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:54:03,857 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\gdpr_compliance.py', reloading
+2025-09-27 03:54:03,867 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\gdpr_compliance.py', reloading
+2025-09-27 03:54:03,867 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\gdpr_compliance.py', reloading
+2025-09-27 03:54:04,413 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:54:05,254 - root - INFO - Database initialized successfully
+2025-09-27 03:54:05,272 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:54:05,277 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:54:10,695 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\security_enhancements.py', reloading
+2025-09-27 03:54:10,696 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\security_enhancements.py', reloading
+2025-09-27 03:54:10,696 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\security_enhancements.py', reloading
+2025-09-27 03:54:11,634 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:54:12,539 - root - INFO - Database initialized successfully
+2025-09-27 03:54:12,567 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:54:12,574 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-09-27 03:54:15,707 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\auth.py', reloading
+2025-09-27 03:54:15,708 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\auth.py', reloading
+2025-09-27 03:54:15,708 - werkzeug - INFO -  * Detected change in 'E:\\GRADUATION PROJECT\\dlp2\\dlp2\\auth.py', reloading
+2025-09-27 03:54:16,857 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-27 03:54:17,913 - root - INFO - Database initialized successfully
+2025-09-27 03:54:17,948 - werkzeug - WARNING -  * Debugger is active!
+2025-09-27 03:54:17,959 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-02 00:20:57,982 - root - INFO - Database initialized successfully
+2025-10-02 00:20:58,150 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-02 00:20:58,150 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-02 00:20:58,278 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-02 00:20:59,015 - root - INFO - Database initialized successfully
+2025-10-02 00:20:59,036 - werkzeug - WARNING -  * Debugger is active!
+2025-10-02 00:20:59,045 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-02 00:21:05,735 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:21:05] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-02 00:21:05,802 - werkzeug - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2025-10-02 00:21:05,812 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:21:05] "GET /auth/login HTTP/1.1" 200 -
+2025-10-02 00:21:06,073 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:21:06] "GET /static/style.css HTTP/1.1" 200 -
+2025-10-02 00:21:06,432 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-02 00:21:07,161 - root - INFO - Database initialized successfully
+2025-10-02 00:21:07,185 - werkzeug - WARNING -  * Debugger is active!
+2025-10-02 00:21:07,193 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-02 00:21:07,929 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:21:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-02 00:29:34,574 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:34] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-10-02 00:29:34,728 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:34] "GET /dashboard HTTP/1.1" 200 -
+2025-10-02 00:29:34,949 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:29:41,765 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:41] "GET /dashboard HTTP/1.1" 200 -
+2025-10-02 00:29:41,826 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:29:42,663 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:42] "GET /send HTTP/1.1" 200 -
+2025-10-02 00:29:42,705 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:29:44,020 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:44] "GET /incidents HTTP/1.1" 200 -
+2025-10-02 00:29:44,082 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:29:45,187 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\app.py', reloading
+2025-10-02 00:29:45,218 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask_login\\utils.py', reloading
+2025-10-02 00:29:45,260 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:45] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-02 00:29:45,406 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:45] "GET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-02 00:29:45,546 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-02 00:29:46,520 - root - INFO - Database initialized successfully
+2025-10-02 00:29:46,540 - werkzeug - WARNING -  * Debugger is active!
+2025-10-02 00:29:46,548 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-02 00:29:49,845 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:49] "GET /admin HTTP/1.1" 200 -
+2025-10-02 00:29:50,021 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:29:54,764 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:54] "GET /analytics HTTP/1.1" 200 -
+2025-10-02 00:29:54,816 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:29:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:30:24,743 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:30:24] "GET /analytics HTTP/1.1" 200 -
+2025-10-02 00:30:24,793 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:30:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-02 00:30:27,281 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:30:27] "GET /incidents HTTP/1.1" 200 -
+2025-10-02 00:30:27,322 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 00:30:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:24:29,869 - root - INFO - Database initialized successfully
+2025-10-09 14:24:30,164 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 14:24:30,164 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 14:24:30,352 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-09 14:24:31,633 - root - INFO - Database initialized successfully
+2025-10-09 14:24:31,668 - werkzeug - WARNING -  * Debugger is active!
+2025-10-09 14:24:31,681 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-09 14:25:32,555 - root - INFO - Database initialized successfully
+2025-10-09 14:25:32,606 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 14:25:32,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 14:25:32,623 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-09 14:25:33,669 - root - INFO - Database initialized successfully
+2025-10-09 14:25:33,737 - werkzeug - WARNING -  * Debugger is active!
+2025-10-09 14:25:33,758 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-09 14:25:34,068 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-09 14:25:34,152 - werkzeug - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2025-10-09 14:25:34,193 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:34] "GET /dashboard HTTP/1.1" 200 -
+2025-10-09 14:25:34,655 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:25:35,050 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-09 14:25:36,174 - root - INFO - Database initialized successfully
+2025-10-09 14:25:36,204 - werkzeug - WARNING -  * Debugger is active!
+2025-10-09 14:25:36,219 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-09 14:25:36,627 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-09 14:25:37,201 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:37] "GET /dashboard HTTP/1.1" 200 -
+2025-10-09 14:25:37,469 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:25:39,809 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:39] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-10-09 14:25:39,852 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:39] "GET /auth/login HTTP/1.1" 200 -
+2025-10-09 14:25:39,961 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:25:57,883 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:57] "GET /auth/register HTTP/1.1" 200 -
+2025-10-09 14:25:57,972 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:25:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:26:17,331 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:17] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-10-09 14:26:17,406 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:17] "GET /dashboard HTTP/1.1" 200 -
+2025-10-09 14:26:17,542 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:26:28,860 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:28] "GET /incidents HTTP/1.1" 200 -
+2025-10-09 14:26:28,934 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:26:33,239 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\app.py', reloading
+2025-10-09 14:26:33,273 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask_login\\utils.py', reloading
+2025-10-09 14:26:33,438 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:33] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-09 14:26:33,829 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-09 14:26:35,076 - root - INFO - Database initialized successfully
+2025-10-09 14:26:35,107 - werkzeug - WARNING -  * Debugger is active!
+2025-10-09 14:26:35,155 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-09 14:26:35,462 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:35] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-09 14:26:36,972 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:36] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-09 14:26:37,052 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:37] "GET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-09 14:26:37,057 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:37] "GET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:26:37,089 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:37] "GET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:26:37,100 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:37] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=dFyoQIVo56heOUfMcTaW HTTP/1.1" 200 -
+2025-10-09 14:26:44,498 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:44] "GET /incidents HTTP/1.1" 200 -
+2025-10-09 14:26:44,573 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:26:47,150 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:47] "GET /analytics HTTP/1.1" 200 -
+2025-10-09 14:26:47,325 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:26:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:27:16,237 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\templating.py', reloading
+2025-10-09 14:27:16,267 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\jinja2\\environment.py', reloading
+2025-10-09 14:27:16,331 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\jinja2\\loaders.py', reloading
+2025-10-09 14:27:16,455 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:16] "[35m[1mGET /security/recommendations HTTP/1.1[0m" 500 -
+2025-10-09 14:27:16,572 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:16] "GET /security/recommendations?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-09 14:27:16,578 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:16] "GET /security/recommendations?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:27:16,602 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:16] "GET /security/recommendations?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:27:16,824 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-09 14:27:18,237 - root - INFO - Database initialized successfully
+2025-10-09 14:27:18,266 - werkzeug - WARNING -  * Debugger is active!
+2025-10-09 14:27:18,279 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-09 14:27:18,583 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:18] "GET /security/recommendations?__debugger__=yes&cmd=resource&f=console.png&s=dFyoQIVo56heOUfMcTaW HTTP/1.1" 200 -
+2025-10-09 14:27:20,265 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:20] "GET /gdpr/data-subject-info HTTP/1.1" 200 -
+2025-10-09 14:27:20,402 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:27:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:28:54,565 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:54] "[35m[1mGET /gdpr/consent-status HTTP/1.1[0m" 500 -
+2025-10-09 14:28:54,674 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:54] "GET /gdpr/consent-status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-09 14:28:54,680 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:54] "GET /gdpr/consent-status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:28:54,716 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:54] "GET /gdpr/consent-status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:28:54,773 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:54] "GET /gdpr/consent-status?__debugger__=yes&cmd=resource&f=console.png&s=TsgmjdE4ohoM6CU7macO HTTP/1.1" 200 -
+2025-10-09 14:28:55,055 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:55] "GET /gdpr/consent-status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-09 14:28:57,649 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:57] "[35m[1mGET /gdpr/retention-report HTTP/1.1[0m" 500 -
+2025-10-09 14:28:57,833 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:57] "GET /gdpr/retention-report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-09 14:28:57,837 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:57] "GET /gdpr/retention-report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:28:57,859 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:57] "GET /gdpr/retention-report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-09 14:28:57,929 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:57] "GET /gdpr/retention-report?__debugger__=yes&cmd=resource&f=console.png&s=TsgmjdE4ohoM6CU7macO HTTP/1.1" 200 -
+2025-10-09 14:28:58,125 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:28:58] "GET /gdpr/retention-report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-09 14:29:00,757 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:00] "GET /incidents HTTP/1.1" 200 -
+2025-10-09 14:29:00,823 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:29:01,427 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:01] "GET /send HTTP/1.1" 200 -
+2025-10-09 14:29:01,493 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:29:49,443 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:49] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-09 14:29:49,648 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:49] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:29:49,651 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:49] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-09 14:29:49,774 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:49] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-09 14:29:49,820 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:49] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=TsgmjdE4ohoM6CU7macO HTTP/1.1" 200 -
+2025-10-09 14:29:53,476 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:53] "GET /admin/policies HTTP/1.1" 200 -
+2025-10-09 14:29:53,601 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:30:02,982 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:30:02] "GET /admin/policies HTTP/1.1" 200 -
+2025-10-09 14:30:03,060 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:30:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-09 14:31:16,209 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:31:16] "GET /send HTTP/1.1" 200 -
+2025-10-09 14:31:16,350 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:31:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:08:29,402 - root - INFO - Database initialized successfully
+2025-10-11 01:08:29,572 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 01:08:29,573 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-11 01:08:29,710 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-11 01:08:30,468 - root - INFO - Database initialized successfully
+2025-10-11 01:08:30,493 - werkzeug - WARNING -  * Debugger is active!
+2025-10-11 01:08:30,506 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-11 01:08:37,786 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:37] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-11 01:08:37,863 - werkzeug - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2025-10-11 01:08:37,878 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:37] "GET /auth/login HTTP/1.1" 200 -
+2025-10-11 01:08:38,191 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:08:38,856 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-11 01:08:39,792 - root - INFO - Database initialized successfully
+2025-10-11 01:08:39,814 - werkzeug - WARNING -  * Debugger is active!
+2025-10-11 01:08:39,829 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-11 01:08:39,921 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-11 01:08:47,628 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:47] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-10-11 01:08:47,717 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:47] "GET /dashboard HTTP/1.1" 200 -
+2025-10-11 01:08:47,956 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:08:50,815 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\app.py', reloading
+2025-10-11 01:08:50,833 - werkzeug - INFO -  * Detected change in 'C:\\Users\\imoaz\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask_login\\utils.py', reloading
+2025-10-11 01:08:50,976 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:50] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-11 01:08:51,074 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:51] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:08:51,102 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:51] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-11 01:08:51,321 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-11 01:08:52,233 - root - INFO - Database initialized successfully
+2025-10-11 01:08:52,266 - werkzeug - WARNING -  * Debugger is active!
+2025-10-11 01:08:52,278 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-11 01:08:52,439 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:52] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=aXTBwXFCHPv5igQWI8ej HTTP/1.1" 200 -
+2025-10-11 01:08:53,446 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:53] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:08:53,507 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:08:54,136 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:54] "GET /send HTTP/1.1" 200 -
+2025-10-11 01:08:54,192 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:08:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:15:59,383 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:15:59] "[32mPOST /send HTTP/1.1[0m" 302 -
+2025-10-11 01:15:59,459 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:15:59] "GET /dashboard HTTP/1.1" 200 -
+2025-10-11 01:15:59,573 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:15:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:16:10,522 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:10] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:16:10,576 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:16:26,980 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:26] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:16:27,035 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:16:31,245 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:31] "GET /admin/policies HTTP/1.1" 200 -
+2025-10-11 01:16:31,292 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:16:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:17:14,196 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:14] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:17:14,272 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:17:16,720 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:16] "GET /admin/backup HTTP/1.1" 200 -
+2025-10-11 01:17:16,780 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:17:40,603 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:40] "GET /dashboard HTTP/1.1" 200 -
+2025-10-11 01:17:40,646 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:17:54,847 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:54] "GET /send HTTP/1.1" 200 -
+2025-10-11 01:17:54,894 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:17:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:18:11,042 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:11] "[32mPOST /send HTTP/1.1[0m" 302 -
+2025-10-11 01:18:11,056 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:11] "GET /dashboard HTTP/1.1" 200 -
+2025-10-11 01:18:11,116 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:18:20,757 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:20] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:18:20,805 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:18:52,697 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:52] "GET /admin/users HTTP/1.1" 200 -
+2025-10-11 01:18:52,760 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:18:57,294 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:57] "GET /admin HTTP/1.1" 200 -
+2025-10-11 01:18:57,343 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:18:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:19:01,630 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:19:01] "GET /analytics HTTP/1.1" 200 -
+2025-10-11 01:19:01,671 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:19:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:19:47,641 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:19:47] "GET /admin/policies HTTP/1.1" 200 -
+2025-10-11 01:19:47,725 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:19:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:11,386 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:11] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-11 01:20:11,440 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:24,941 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:24] "GET /send HTTP/1.1" 200 -
+2025-10-11 01:20:24,989 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:26,202 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:26] "GET /incidents HTTP/1.1" 200 -
+2025-10-11 01:20:26,257 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:27,582 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:27] "[35m[1mGET /file-scanner HTTP/1.1[0m" 500 -
+2025-10-11 01:20:27,639 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:27] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:27,640 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:27] "[36mGET /file-scanner?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-11 01:20:27,728 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:27] "GET /file-scanner?__debugger__=yes&cmd=resource&f=console.png&s=5GUabIcandGZNzGJvyJh HTTP/1.1" 200 -
+2025-10-11 01:20:55,006 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:55] "GET /admin HTTP/1.1" 200 -
+2025-10-11 01:20:55,050 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:20:57,306 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:57] "GET /analytics HTTP/1.1" 200 -
+2025-10-11 01:20:57,352 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:20:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:21:02,592 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:02] "GET /analytics HTTP/1.1" 200 -
+2025-10-11 01:21:02,636 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:21:07,821 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:07] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-11 01:21:07,870 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:21:11,518 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:11] "GET /analytics HTTP/1.1" 200 -
+2025-10-11 01:21:11,561 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:21:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:44:02,418 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:44:02] "[32mGET /analytics HTTP/1.1[0m" 302 -
+2025-10-11 01:44:02,464 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:44:02] "GET /auth/login?next=/analytics HTTP/1.1" 200 -
+2025-10-11 01:44:02,503 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:44:02] "GET /static/style.css HTTP/1.1" 200 -
+2025-10-11 01:44:03,218 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:44:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-11 01:45:45,652 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:45:45] "[32mPOST /auth/login?next=/analytics HTTP/1.1[0m" 302 -
+2025-10-11 01:45:45,679 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:45:45] "GET /dashboard HTTP/1.1" 200 -
+2025-10-11 01:45:45,759 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:45:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-10-11 01:50:50,207 - root - INFO - Database initialized successfully
+2025-10-11 01:50:50,335 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 01:50:50,336 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-11 01:50:50,349 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-10-11 01:50:51,067 - root - INFO - Database initialized successfully
+2025-10-11 01:50:51,086 - werkzeug - WARNING -  * Debugger is active!
+2025-10-11 01:50:51,093 - werkzeug - INFO -  * Debugger PIN: 173-033-490
+2025-10-11 01:50:53,126 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:50:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-11 01:50:53,482 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:50:53] "GET /auth/login HTTP/1.1" 200 -
+2025-10-11 01:50:53,731 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:50:53] "GET /static/style.css HTTP/1.1" 200 -
+2025-10-11 01:50:55,430 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 01:50:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
